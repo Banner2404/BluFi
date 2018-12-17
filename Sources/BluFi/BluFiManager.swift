@@ -440,7 +440,10 @@ public final class BluFiMangager: NSObject {
     
     public func setWiFiSta(_ ssid: String, _ password: String) -> Promise<[UInt8]> {
         return async {
-            var type = self.getTypeValue(type: Type.Data.PACKAGE_VALUE, subtype: Type.Data.SUBTYPE_STA_WIFI_SSID)
+            var type = self.getTypeValue(type: Type.Ctrl.PACKAGE_VALUE, subtype: Type.Ctrl.SUBTYPE_SET_OP_MODE)
+            _ = try await(self.writeFrame(type, [UInt8](OP_MODE.STA), self.WRITE_TIMEOUT_SECOND, false))
+
+            type = self.getTypeValue(type: Type.Data.PACKAGE_VALUE, subtype: Type.Data.SUBTYPE_STA_WIFI_SSID)
             _ = try await(self.writeFrame(type, [UInt8](ssid.utf8), self.WRITE_TIMEOUT_SECOND, false))
             
             type = self.getTypeValue(type: Type.Data.PACKAGE_VALUE, subtype: Type.Data.SUBTYPE_STA_WIFI_PASSWORD)
