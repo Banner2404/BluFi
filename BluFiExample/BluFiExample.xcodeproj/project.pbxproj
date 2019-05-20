@@ -124,6 +124,7 @@
 				TargetAttributes = {
 					FFDD383221462050007F70EC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.AccessWiFi = {
 								enabled = 1;
@@ -385,7 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuanpm.BluFiExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -405,7 +406,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuanpm.BluFiExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
