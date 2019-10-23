@@ -1,55 +1,51 @@
 PODS:
-  - AwaitKit (5.0.0):
+  - AwaitKit (5.2.0):
     - PromiseKit (~> 6)
-  - BigInt (3.1.0):
-    - SipHash (~> 1.2)
-  - BluFi (1.0.1):
-    - AwaitKit (~> 5.0.0)
-    - BigInt (~> 3.1)
-    - CryptoSwift (= 0.11.0)
-  - CryptoSwift (0.11.0)
-  - PromiseKit (6.4.0):
-    - PromiseKit/CorePromise (= 6.4.0)
-    - PromiseKit/Foundation (= 6.4.0)
-    - PromiseKit/UIKit (= 6.4.0)
-  - PromiseKit/CorePromise (6.4.0)
-  - PromiseKit/Foundation (6.4.0):
+  - BigInt (5.0.0)
+  - BluFi (1.0.3):
+    - AwaitKit (~> 5.2.0)
+    - BigInt (~> 5.0.0)
+    - CryptoSwift (= 1.1.2)
+  - CryptoSwift (1.1.2)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.4.0):
+  - PromiseKit/UIKit (6.11.0):
     - PromiseKit/CorePromise
   - RxBluetoothKit (5.2.1):
     - RxSwift (~> 5.0)
   - RxSwift (5.0.0)
-  - SipHash (1.2.2)
 
 DEPENDENCIES:
   - BluFi (from `..`)
   - RxBluetoothKit (~> 5.2.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AwaitKit
     - BigInt
     - CryptoSwift
     - PromiseKit
     - RxBluetoothKit
     - RxSwift
-    - SipHash
 
 EXTERNAL SOURCES:
   BluFi:
     :path: ".."
 
 SPEC CHECKSUMS:
-  AwaitKit: d8a6e30eeb2da916630270b44636b31033388bd8
-  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
-  BluFi: a2e517e62a50e3c1e5532aae2efb371de415e91f
-  CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
-  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  AwaitKit: 512626cd12c82b1fbffddc8f414d0364cb456004
+  BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
+  BluFi: ad667d646bb7bc01af2ffc2b2fccb5eb1b522d00
+  CryptoSwift: 31dacd1f13427439ddae5b5cbaae4c8dbc43047e
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
   RxBluetoothKit: 3a4ca066d4d6e87ec5cf77a81298830a9a833bf1
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
 
 PODFILE CHECKSUM: 4f8e8d62548d3eec5174e672cfaf9211871e619f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

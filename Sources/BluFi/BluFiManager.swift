@@ -35,7 +35,7 @@ struct BluFiError: Error {
     }
 }
 
-public final class BluFiMangager: NSObject {
+public final class BluFiManager: NSObject {
     
    
     private let DH_P = "cf5cf5c38419a724957ff5dd323b9c45c3cdd261eb740f69aa94b8bb1a5c9640" +

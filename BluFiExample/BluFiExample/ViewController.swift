@@ -14,7 +14,7 @@ import RxSwift
 import SystemConfiguration.CaptiveNetwork
 
 class ViewController: UIViewController {
-    var bluFi: BluFiMangager?
+    var bluFi: BluFiManager?
     let manager = CentralManager(queue: .main)
     private let bluFiServiceUUID = CBUUID(string: "0000ffff-0000-1000-8000-00805f9b34fb")
     private let bluFiDataOutCharsUUID = CBUUID(string: "0000ff01-0000-1000-8000-00805f9b34fb")
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bluFi = BluFiMangager(writeToBluetooth: { (data) in
+        bluFi = BluFiManager(writeToBluetooth: { (data) in
             //write data to Bluetooth
             _ = self.dataOutCharacteristics?
                 .writeValue(data, type: .withResponse)
