@@ -402,8 +402,8 @@ public final class BluFiManager: NSObject {
                     throw BluFiError("Invalid wifi list array len")
                 }
                 let nameArr = Array(arrList[offsetBegin..<offsetEnd])
-                let name = String(bytes: nameArr, encoding: .utf8)
-                strList.append(WiFiEntry(name!, rssi))
+                let name = String(bytes: nameArr, encoding: .utf8) ?? ""
+                strList.append(WiFiEntry(name, rssi))
                 idx = offsetEnd
             }
             return strList
