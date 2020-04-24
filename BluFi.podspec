@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BluFi'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.license          = 'MIT'
   s.summary          = 'The ESP32 BluFi Library for iOS'
   s.homepage         = 'https://github.com/tuanpmt/BluFi.git'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'AwaitKit', '~> 5.2.0'
   s.dependency 'BigInt', '~> 5.0.0'
-  s.dependency 'CryptoSwift', '1.1.2'
+  s.dependency 'CryptoSwift', '~> 1.3.1'
 
   s.source_files = 'Sources/**/*.swift'
   s.requires_arc = true
